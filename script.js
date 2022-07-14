@@ -18,9 +18,13 @@ function addItemToList(){
     }
 }
 
-
-function markItemComplete(){
-    alert("Strike Through");
+function clearList(){
+    if(items_list.innerHTML === ''){
+        alert("The list is empty. Cannot be cleared")
+    }else {
+        items_list.innerHTML = '';
+        input_item.value = '';
+    }
 }
 
 function istextFieldBlank(){
